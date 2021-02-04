@@ -2,6 +2,7 @@ import React from 'react';
 import '../App.css';
 import ButtonPanel from './buttonPanel';
 import Display from './display';
+import calculate from '../logic/calculate';
 
 const App = () => {
   return (
