@@ -18,7 +18,7 @@ const operate = (numberOne, numberTwo, operation) => {
       return "Can't be divided by 0";
     }
   } else if (operation === '%') {
-    result = Big(a.div(100));
+    result = Big(a.mod(b));
   }
 
   return result.toPrecision().toString();
