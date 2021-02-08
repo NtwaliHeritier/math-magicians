@@ -23,6 +23,8 @@ const calculate = (data, buttonName) => {
     }
   } else if (buttonName === '+/-') {
     total = operate(total, '-1', 'x');
+  } else if (buttonName === '%') {
+    total = operate(total, '100', '÷');
   } else if (buttonName !== '=') {
     operation = buttonName;
   } else {
