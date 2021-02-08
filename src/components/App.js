@@ -10,21 +10,21 @@ class App extends Component {
     this.state = {
       total: '0',
       next: '',
-      operation: ''
+      operation: '',
     };
   }
 
-  handleClick = (buttonName) => {
+  handleClick = buttonName => {
     const data = calculate(this.state, buttonName);
-    this.setState({total: data.total, next: data.next, operation: data.operation});
+    this.setState({ total: data.total, next: data.next, operation: data.operation });
   };
 
   render() {
     return (
       <>
-      <Display result= {this.state.total}/>
-      <ButtonPanel clickHandler = {this.handleClick}/>
-    </>
+        <Display result={this.state.total} />
+        <ButtonPanel clickHandler={this.handleClick} />
+      </>
     );
   }
 }
