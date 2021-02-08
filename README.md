@@ -13,7 +13,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Live Demo
 
-[Live demo](https://heuristic-saha-cd6f4b.netlify.app/)
+[Live demo](https://xenodochial-tesla-3e2752.netlify.app/)
 
 ## Built With 🛠
 
