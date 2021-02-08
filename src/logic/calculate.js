@@ -7,7 +7,7 @@ const calculate = (data, buttonName) => {
     next = '';
     operation = '';
   } else if (buttonName === '.') {
-    total += '.';
+    if (/\./.test(total) === false) total += '.';
   } else if (/\d/.test(buttonName)) {
     if (operation === '') {
       if (total === '0') {
