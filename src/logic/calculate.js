@@ -4,7 +4,7 @@ const calculate = (data, buttonName) => {
   let { total, next, operation } = data;
   if(buttonName == "AC") {
     total = '0';
-    next = '0';
+    next = '';
     operation = '';
    }
    else if(buttonName == ".") {
@@ -15,7 +15,7 @@ const calculate = (data, buttonName) => {
       total == '0' ? total = buttonName : total += buttonName;
     }
     else {
-      if(next == '0') {
+      if(next == '') {
         next = total;
         total = buttonName;
       }
@@ -25,8 +25,12 @@ const calculate = (data, buttonName) => {
     }
   }
   else {
+    if(buttonName !== '=') {
     operation = buttonName;
-    let obj = operate(total, next, operation);
+    }
+    else {
+    total = operate(next, total, operation)
+    }
   }
   return {total, next, operation};
 };
