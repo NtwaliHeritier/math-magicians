@@ -21,6 +21,8 @@ const calculate = (data, buttonName) => {
     } else {
       total += buttonName;
     }
+  } else if (buttonName === '+/-') {
+    total = operate(total, '-1', 'x');
   } else if (buttonName !== '=') {
     operation = buttonName;
   } else {
