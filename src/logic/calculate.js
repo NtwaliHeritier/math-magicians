@@ -9,7 +9,7 @@ const calculate = (data, buttonName) => {
   } else if (buttonName === '.') {
     if (/\./.test(total) === false) total += '.';
   } else if (/\d/.test(buttonName)) {
-    if (operation === '') {
+    if ((operation === '' && next === '') || operation !== '') {
       if (total === '0') {
         total = buttonName;
       } else {
@@ -27,6 +27,8 @@ const calculate = (data, buttonName) => {
     total = operate(total, '100', '÷');
   } else if (buttonName !== '=') {
     operation = buttonName;
+    next = total;
+    total = '0';
   } else {
     total = operate(next, total, operation);
   }
