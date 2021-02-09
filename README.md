@@ -19,6 +19,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ```
 - React JS
+- Vanilla JS
+- Big.js package
 ```
 
 ## Authors
@@ -34,7 +36,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/NtwaliHeritier/weather-app).
+Feel free to check the [issues page](https://github.com/NtwaliHeritier/math-magicians).
 
 ### Show your support
 
