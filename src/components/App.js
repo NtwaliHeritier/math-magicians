@@ -9,7 +9,7 @@ class App extends Component {
     super();
     this.state = {
       total: '0',
-      next: '',
+      next: '0',
       operation: '',
     };
   }
