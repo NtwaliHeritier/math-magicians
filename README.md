@@ -13,13 +13,31 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Live Demo
 
-[Live demo](https://heuristic-saha-cd6f4b.netlify.app/)
+[Live demo](https://xenodochial-tesla-3e2752.netlify.app/)
 
 ## Built With 🛠
 
 ```
 - React JS
+- Vanilla JS
+- Big.js package
 ```
+
+## Getting Started
+
+**To get this project set up on your local machine, follow these simple steps:**
+
+**Step 1**<br>
+Navigate through the local folder where you want to clone the repository and run<br>
+`git clone https://github.com/NtwaliHeritier/math-magicians.git`.<br>
+**Step 2**<br>
+Run `cd math-magicians`<br>
+**Step 3**<br>
+Run `npm install` to install the npm packages from the `package.json` file.<br>
+**Step 4**<br>
+Run `npm start` to start the webpack server, you can now navigate to `http://localhost:3000` to view the app. The server refreshes the app every time you make a change to a file used by it.<br>
+**Step 5**<br>
+Most important, enjoy the app!<br>
 
 ## Authors
 
@@ -34,7 +52,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/NtwaliHeritier/weather-app).
+Feel free to check the [issues page](https://github.com/NtwaliHeritier/math-magicians).
 
 ### Show your support
 

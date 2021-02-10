@@ -1,7 +1,11 @@
 import PropTypes from 'prop-types';
 
-const Button = props => {
- return <button>{props.buttonName}</button>;
+const Button = ({ buttonName, clickHandler }) => {
+  const handleClick = buttonName => {
+    clickHandler(buttonName);
+  };
+
+  return <button onClick={() => handleClick(buttonName)}>{buttonName}</button>;
 };
 
 export default Button;
