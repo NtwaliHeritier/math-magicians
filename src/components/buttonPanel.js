@@ -6,7 +6,7 @@ const ButtonPanel = props => {
   return (
     <div>
       <div>
-        <Button buttonName="AC" clickHandler={handleClick} />
+        <Button buttonName="AC" clickHandler={handleClick}/>
         <Button buttonName="+/-" clickHandler={handleClick} />
         <Button buttonName="%" clickHandler={handleClick} />
         <Button buttonName="÷" clickHandler={handleClick} />
