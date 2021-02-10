@@ -9,14 +9,7 @@ const calculate = (data, buttonName) => {
   } else if (buttonName === '.') {
     if (/\./.test(total) === false) total += '.';
   } else if (/\d/.test(buttonName)) {
-    if ((operation === '' && next === '0') || operation !== '') {
-      if (total === '0') {
-        total = buttonName;
-      } else {
-        total += buttonName;
-      }
-    } else if (next === '0') {
-      next = total;
+    if (total === '0' || total === next) {
       total = buttonName;
     } else {
       total += buttonName;
@@ -26,13 +19,14 @@ const calculate = (data, buttonName) => {
   } else if (buttonName === '%') {
     total = operate(total, '100', '÷');
   } else if (buttonName !== '=') {
-    operation = buttonName;
     if (next === '0') {
       next = total;
+      operation = buttonName;
     } else {
-      next = operate(next, total, operation);
+      total = (operation === 'x' || operation === '÷') && (next === '0') ? operate(total, '1', operation) : operate(next, total, operation);
+      next = total;
+      operation = buttonName;
     }
-    total = '0';
   } else {
     total = operate(next, total, operation);
     next = '0';
