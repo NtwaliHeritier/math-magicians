@@ -18,7 +18,7 @@ const App = () => {
   return (
     <>
      <Display result={state.total} />
-     <ButtonPanel clickHandler={handleClick} />
+     <ButtonPanel clickHandler={handleClick}/>
     </>
   ) 
 }
