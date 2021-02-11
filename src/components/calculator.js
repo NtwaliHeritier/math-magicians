@@ -17,8 +17,13 @@ const Calculator = () => {
 
   return (
     <>
-     <Display result={state.total} />
-     <ButtonPanel clickHandler={handleClick}/>
+      <div style = {{display: 'flex', justifyContent: 'space-evenly'}}>
+        <h3 style={{marginTop: '5%'}}>Let's do some math!</h3>
+        <div>
+          <Display result={state.total} />
+          <ButtonPanel clickHandler={handleClick}/>
+        </div>
+      </div>
     </>
   ) 
 }
