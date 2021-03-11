@@ -19,7 +19,7 @@ const Calculator = () => {
     <>
       <div style = {{display: 'flex', justifyContent: 'space-evenly'}}>
         <h3 style={{marginTop: '5%'}}>Let's do some math!</h3>
-        <div>
+        <div  data-testid = "calculator">
           <Display result={state.total} />
           <ButtonPanel clickHandler={handleClick}/>
         </div>
