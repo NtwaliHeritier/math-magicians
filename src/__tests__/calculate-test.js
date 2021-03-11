@@ -39,7 +39,7 @@ describe('Calculator', () => {
     expect(calculate({ total: '1', next: '2', operation: '+' }, '=')).toEqual({ total: '3', next: '0', operation: '+' });
   });
 
-   it('tests +', () => {
+  it('tests +', () => {
     expect(calculate({ total: '1', next: '2', operation: '+' }, '=')).not.toEqual({ total: '3', next: '0', operation: 'x' });
   });
 

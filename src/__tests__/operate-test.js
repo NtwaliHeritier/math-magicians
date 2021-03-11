@@ -41,6 +41,6 @@ describe('Operator', () => {
   });
 
   it('returns the quotient', () => {
-    expect(operate(a, 0, '÷')).not.toEqual("0");
+    expect(operate(a, 0, '÷')).not.toEqual('0');
   });
 });
